@@ -16,5 +16,5 @@ use `playwright-cli open ${url} --browser chromium`to search, and nav to the pla
 
 recommend use yt-dlp for parallel download
 ```shell
-yt-dlp -N 16 --retries 50 --fragment-retries 50 -f "bv*+ba/b" --merge-output-format mp4 {URL}
+yt-dlp -N 16 --retries 50 --fragment-retries 50 -f "bv*+ba/b" --merge-output-format mp4 --ppa "Merger+ffmpeg:-movflags +faststart" -o "{VIDEO_NAME}.mp4" {URL}
 ```
